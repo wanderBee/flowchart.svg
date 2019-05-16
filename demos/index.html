@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> 广告推送 </title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <script src="./snap.svg.js"></script>
+  <script src="./FlowchartSvg.js"></script>
+  <style>
+    #flow{
+      border: 1px solid red;
+    }
+  </style>
+</head>
+
+<body>
+  <svg id="flow" width="550" height="450"></svg>
+  <script type="text/javascript">
+    var svg = FlowchartSvg.init('#flow');
+    svg.setOption({
+      // type: 'polar', // 默认值'polar'
+      r: 22, // polar图的圆半径
+      data: [{
+        source: '开始',
+        target: '中间',
+        value: 'a>5'
+      }, {
+        source: '中间',
+        target: '结束',
+        value: 'b>0'
+      }],
+      style: {
+        color: '#6c89d5'
+      }
+    })
+  </script>
+</body>
+
+</html>
