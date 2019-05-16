@@ -1,5 +1,5 @@
 {
-  "name": "advertise-push",
+  "name": "flowchart.svg",
   "version": "0.1.0",
   "description": "工作流图形库",
   "main": "dist/flowchartSvg.js",
